@@ -14,7 +14,13 @@ class testAPI(Resource):
         return {'you sent': some_json}, 201
 
 
+class Multi(Resource):
+    def get(self, num):
+        return {'result': num*num}
+
+
 api.add_resource(testAPI, '/')
+api.add_resource(Multi, '/multi/<int:num>')
 
 if __name__ == '__main__':
     app.run(debug=True)
