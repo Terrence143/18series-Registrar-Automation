@@ -7,7 +7,7 @@ api = Api(app)
 
 class testAPI(Resource):
     def get(self):
-        return {'welcome': "API Testing 1: OK!"}
+        return {'welcome': "API Testing 2: Ok!"}
 
     def post(self):
         some_json = request.get_json()
