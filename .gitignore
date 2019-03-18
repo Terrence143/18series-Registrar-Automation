@@ -1,6 +1,6 @@
-#Ignore folders
-.idea/
+
+\.idea/
 venv/
 
-Ignore files
 *.pyc
+*.xml
