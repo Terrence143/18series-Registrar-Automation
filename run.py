@@ -1,5 +1,5 @@
 import unittest
-
+import os
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 
@@ -36,4 +36,4 @@ def test():
 
 
 if __name__ == '__main__':
-    manager.run(host='0.0.0.0',port=5000)
+	manager.run(debug = True)
